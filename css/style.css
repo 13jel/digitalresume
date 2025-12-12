@@ -16,22 +16,27 @@ body {
 
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
     body {
         justify-content: flex-start;
         padding: 0px;
     }
 
 }
-
-@media (max-width:600px) {
+@media (max-width: 600px) {
     body {
         justify-content: flex-start;
         padding: 0 1px;
     }
 
 }
+@media (max-width: 400px) {
+    body {
+        justify-content: flex-start;
+        padding: 0 2px;
+    }
 
+}
 @media (max-width:600px) { /*Shuts off magnifier by hover on mobile*/
     .profile-image:hover {
         transform: none;
@@ -84,13 +89,20 @@ hr {
     padding: 6px;
     margin-top: 6px;
     max-width: 800px;
-    text-align: center;
+    text-align: center;    
+    float: initial;
 
 }
 a:hover {
     background-color: #63625d;
     color: #BCBDC0;
     padding: 3px;
+}
+@media screen and (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+    }
+
 }
 
 /*Homepage*/
@@ -117,6 +129,38 @@ p {
 
 }
 
+/*All headlines*/
+h2 {
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+/*Lists*/
+ul {
+    color: #333;
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+
+}
+.skills-column {
+    float: none;
+    position: relative;
+    margin-right: 20px;
+    font-size: 17px;
+
+}
+ol li {
+color: #333;
+
+}
+
+/*All links, both nav and bottom of page*/
+a {
+    color: #734B5E;
+
+}
 .links {
     background-color: #BCBDC0;
     border: 3px solid #333;
@@ -131,38 +175,7 @@ p {
     }
 }
 
-h2 {
-    text-align: center;
-    text-decoration: underline;
-
-}
-
-ul {
-    color: #333;
-    columns: 3;
-    -webkit-columns: 3;
-    -moz-columns: 3;
-
-}
-
-.skills-column {
-    float: none;
-    position: relative;
-    margin-right: 20px;
-    font-size: 17px;
-
-}
-
-ol li {
-color: #333;
-
-}
-
-a {
-    color: #734B5E;
-
-}
-
+/*Footer*/
 footer {
     display: flex;
     justify-content: center;
