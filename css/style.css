@@ -1,9 +1,10 @@
 body {
     background-color: #565857;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
     line-height: 1.6;
     margin: 23px;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -17,13 +18,11 @@ body {
 
 header {
     text-align: center;
-    padding: 30px;
+    padding: 6px;
     border-bottom: 2px solid #333;
-
-}
-
-header h1 {
-    color: #333;
+    background-color: #343836;
+    font-size: 33px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
@@ -48,6 +47,7 @@ hr {
     background-color: #BCBDC0;
     border: 3px solid #333;
     padding: 6px;
+    margin-top: 6px;
     max-width: 800px;
     text-align: center;
 
@@ -58,6 +58,7 @@ hr {
     border: 3px solid #333;
     padding: 6px;
     max-width: 800px;
+    font-size: 18px;
 
 }
 
@@ -69,6 +70,7 @@ p {
 
 .cv-section {
     background-color: #BCBDC0;
+    font-size: 16px;
     border: 3px solid #333;
     padding: 13px;
     max-width: 800px;
@@ -87,6 +89,7 @@ p {
 
 h2 {
     text-align: center;
+    text-decoration: underline;
 
 }
 
@@ -102,6 +105,7 @@ ul {
     float: none;
     position: relative;
     margin-right: 20px;
+    font-size: 17px;
 
 }
 
