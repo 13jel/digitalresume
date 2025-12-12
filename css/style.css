@@ -1,10 +1,41 @@
+main {
+    background-color: #63625d;
+    margin: auto;
+    align-self: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
 body {
-    background-color: #565857;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #52514b;
+    width: 80%;
+    margin: 0 auto;
     line-height: 1.6;
-    margin: 23px;
     display: flex;
     justify-content: center;
+
+}
+
+@media (max-width:900px) {
+    body {
+        justify-content: flex-start;
+        padding: 0px;
+    }
+
+}
+
+@media (max-width:600px) {
+    body {
+        justify-content: flex-start;
+        padding: 0 1px;
+    }
+
+}
+
+@media (max-width:600px) { /*Shuts off magnifier by hover on mobile*/
+    .profile-image:hover {
+        transform: none;
+    }
 
 }
 
@@ -16,6 +47,7 @@ body {
 
 }
 
+/*Header*/
 header {
     text-align: center;
     padding: 6px;
@@ -25,7 +57,6 @@ header {
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-
 .profile-image {
     display: block;
     width: 200px;
@@ -35,6 +66,9 @@ header {
     border: 3px solid #333;
 
 }
+.profile-image:hover {
+    transform: scale(1.7);
+}
 
 hr {
     border-color: #333;
@@ -43,6 +77,7 @@ hr {
 
 }
 
+/*Nav with responsive design*/
 .nav {
     background-color: #BCBDC0;
     border: 3px solid #333;
@@ -52,7 +87,13 @@ hr {
     text-align: center;
 
 }
+a:hover {
+    background-color: #63625d;
+    color: #BCBDC0;
+    padding: 3px;
+}
 
+/*Homepage*/
 .paragraph {
     background-color: #BCBDC0;
     border: 3px solid #333;
@@ -61,7 +102,6 @@ hr {
     font-size: 18px;
 
 }
-
 p {
     margin: 27px;
     text-align: center;
@@ -73,8 +113,7 @@ p {
     font-size: 16px;
     border: 3px solid #333;
     padding: 13px;
-    max-width: 800px;
-    max-height: 350px;
+    width: auto;
 
 }
 
@@ -85,6 +124,11 @@ p {
     max-width: 800px;
     text-align: center;
 
+}
+@media screen and (max-width: 600px) {
+    .links {
+        display: flex;
+    }
 }
 
 h2 {
@@ -119,11 +163,12 @@ a {
 
 }
 
-a:hover {
-    color: #F5D3C8;
-}
-
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 13px;
+    position: relative;
+    width: auto;
+    font-size: 14px;
 
 }
